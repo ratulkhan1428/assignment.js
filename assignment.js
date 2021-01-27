@@ -15,8 +15,8 @@ console.log(distance)
 
 
 function budgetCalculator(watch, mobile, laptop) {
-    if ( watch, mobile, laptop <= 0) {
-        return "Number of products should be at least 1";
+    if ( watch <= 0, mobile <= 0, laptop <= 0) {
+        return "Number of product should be at least 1";
         }
         else {
             var watchPrice = watch * 50;
@@ -34,6 +34,9 @@ console.log(budget)
 
 
 function hotelCost(days) {
+    if (days <= 0) {
+        return "You can't add 0 or negative number here"
+    }
     var cost = 0;
     if (days <= 10) {
         cost = days * 100;
